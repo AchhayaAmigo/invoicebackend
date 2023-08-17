@@ -1,0 +1,11 @@
+{
+  "name": "invoiceappbackend",
+  "version": "1.0.0",
+  "description": "This repository contains the backend for Amigo's Invoice App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
