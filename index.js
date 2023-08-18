@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
+const corsOptions = require("./config/corsOptions");
 const { logger } = require("./middlewares/logEvents");
 const errorHandler = require("./middlewares/errorHandler");
 const PORT = process.env.PORT || 8080;
@@ -8,18 +9,6 @@ const PORT = process.env.PORT || 8080;
 // custom middleware logger
 app.use(logger);
 
-// Cross Origin Resource Sharing
-const whitelist = [];
-const corsOptions = {
-  origin: (origin, callback) => {
-    if (whitelist.indexOf(origin) !== -1 || !origin) {
-      callback(null, true);
-    } else {
-      callback(new Error("Not allowed by CORS"));
-    }
-  },
-  optionsSuccessStatus: 200,
-};
 app.use(cors(corsOptions));
 
 app.use(express.urlencoded({ extended: false }));
