@@ -1,0 +1,1 @@
+20230818	14:46:41	74ef89a8-43e3-4432-8a3f-697bd61b92fd	Error : Not allowed by CORS

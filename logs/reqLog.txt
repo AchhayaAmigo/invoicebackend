@@ -1,0 +1,13 @@
+20230818	14:43:26	4b94f8da-d47c-41d2-86f3-cfacfcb77c3f	GET	 undefined	 /
+20230818	14:43:27	82fa8d2f-92f8-47bb-b33c-fa6b8967058c	GET	 undefined	 /favicon.ico
+20230818	14:43:38	065bcf9c-4976-4890-874a-a993ebd2abfc	GET	 undefined	 /login
+20230818	14:44:21	0ba2aae2-f736-4815-bdec-480767522437	GET	 undefined	 /login
+20230818	14:44:23	c871038d-14a7-4c8c-843b-a52fc7b7ccf5	GET	 undefined	 /login
+20230818	14:44:31	fa400dd8-689b-4e51-ac09-b5838078e65f	GET	 undefined	 /
+20230818	14:44:37	1962c78d-927d-42c7-8d14-f257e53b61d6	GET	 undefined	 /bills
+20230818	14:44:50	78727a4c-bfb8-4413-a7f1-93e6039e346f	GET	 undefined	 /bill/20
+20230818	14:44:57	eeba6513-12e6-41be-bb62-07ab41b7a2cc	GET	 undefined	 /details
+20230818	14:45:07	287adcc3-9425-4b6e-bcc4-931b255f3389	GET	 undefined	 /login
+20230818	14:45:30	daa023ce-8c50-4a9f-98b0-68fd60354604	GET	 undefined	 /signup
+20230818	14:45:36	dab3c813-c7ca-43a3-a7a6-74b0bc244179	GET	 undefined	 /logout
+20230818	14:46:40	7aa99129-7641-474d-beb5-135af60cce82	GET	 undefined	 /logout
