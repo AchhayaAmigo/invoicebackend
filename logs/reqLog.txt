@@ -34,3 +34,11 @@
 20230818	17:47:34	9d4b101e-8356-4943-b9ec-42215f2b6cec	GET	 undefined	 /bill/3
 20230818	17:48:09	4e31e4ef-786e-4a0a-917e-e1dba2ebd5c0	GET	 undefined	 /bill/3
 20230818	17:48:27	bbb8521d-a584-481d-9ed1-7b77e4d4df20	GET	 undefined	 /bill/3
+20230822	16:38:47	db96a3ea-a1ab-4f91-9b9d-734c818dc055	POST	 undefined	 /signup
+20230822	16:39:48	e47c466b-bc05-4a39-9942-b26e780a7b57	POST	 undefined	 /signup
+20230822	16:39:55	184eecd4-f01f-4167-b162-70551667ea26	POST	 undefined	 /signup
+20230822	16:39:57	e9443d56-fc66-4479-9e05-fa6b35d9a4ba	POST	 undefined	 /signup
+20230822	16:40:01	9d775e2e-6628-4592-a8f3-aa307ff977f6	POST	 undefined	 /signup
+20230822	16:40:07	468d327f-2140-4fca-9eae-d0d4ad3d51f2	POST	 undefined	 /signin
+20230822	16:40:12	9b0fa9ea-8019-4f28-9199-5df5983254fe	POST	 undefined	 /signin
+20230822	16:40:18	f2127ce0-7536-420b-95c8-d4cd0c97f331	POST	 undefined	 /signin
