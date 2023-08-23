@@ -42,3 +42,10 @@
 20230822	16:40:07	468d327f-2140-4fca-9eae-d0d4ad3d51f2	POST	 undefined	 /signin
 20230822	16:40:12	9b0fa9ea-8019-4f28-9199-5df5983254fe	POST	 undefined	 /signin
 20230822	16:40:18	f2127ce0-7536-420b-95c8-d4cd0c97f331	POST	 undefined	 /signin
+20230823	20:43:08	2b827343-a65d-421a-9e5a-5a65df3a6122	POST	 undefined	 /signin
+20230823	20:43:52	57b5fc7c-7bbe-4971-86bd-8b7421a80172	POST	 undefined	 /signin
+20230823	22:10:54	50bd4879-fb4e-49a6-83c0-5d34721c2241	POST	 undefined	 /signup
+20230823	22:11:53	05c22fec-793e-4ad8-a39f-480fde4f248b	POST	 undefined	 /signup
+20230823	22:12:54	053e7f17-4d23-4662-b6ab-89d48549dc62	POST	 undefined	 /signup
+20230823	22:14:44	51b7cdc2-6ed2-433d-b14c-b50eda79e309	POST	 undefined	 /signin
+20230823	22:15:22	31f82e02-705f-4d0f-b212-e4533505c409	GET	 undefined	 /logout

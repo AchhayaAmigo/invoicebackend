@@ -1,8 +1,10 @@
 const express = require("express");
 const router = express.Router();
-const { handleBillByID, handleBills } = require("../controllers/billDetails");
-const { handleSignUp, handleSignin } = require("../controllers/signin-signup");
-const { handleGetDetails, handlePostDetails, handlePutDetails } = require("../controllers/companyDetails");
+const handleSignUp  = require("../controllers/user/signupController");
+const handleSignin  = require("../controllers/user/authController");
+const handleLogout  = require("../controllers/user/logoutController");
+const { handleBillByID, handleBills } = require("../controllers/bill/billDetails");
+const { handleGetDetails, handlePostDetails, handlePutDetails } = require("../controllers/company/companyDetails");
 
 router.get("/", (req, res) => {
   res.send("Testing Home Route");
@@ -10,6 +12,7 @@ router.get("/", (req, res) => {
 
 router.post("/signin", handleSignin);
 router.post("/signup", handleSignUp);
+router.get("/logout", handleLogout);
 
 router.get("/bills", handleBills);
 router.get("/bill/:billId", handleBillByID);
