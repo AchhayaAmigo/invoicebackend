@@ -28,6 +28,13 @@ const handleSignUp = async (req, res) => {
     const newUser = {
       username: user,
       password: hashedPswd,
+      companyDetails: {
+        companyName: "",
+        gstNo: "",
+        cinNo: "",
+        contact: "",
+        tandc: ""
+      }
     };
     userDB.setUsers([...userDB.users, newUser]);
     await fsPromises.writeFile(
