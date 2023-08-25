@@ -203,3 +203,7 @@
 20230825	15:42:29	7b10e6b4-a2c8-42d7-9157-99501a1adee2	GET	 undefined	 /bills
 20230825	15:42:38	18291144-a8d2-4b49-9d00-fe1993c9cfb6	DELETE	 undefined	 /deleteBill?id=5
 20230825	15:42:42	1ae6405a-ae72-4c14-9187-9aad7dbbbef5	GET	 undefined	 /bills
+20230825	16:46:58	56ce9d1e-2bcd-44b6-b9aa-4422bcf03670	GET	 undefined	 /generateOTP
+20230825	16:47:04	37d66a4e-3c96-4b10-89b0-4452a7667cd4	GET	 undefined	 /generateOTP
+20230825	16:47:20	18f928d1-e6eb-49af-96cb-6c4e756945c7	GET	 undefined	 /generateOTP
+20230825	16:47:36	2f156d27-663a-4f5d-aba6-cf3bf797aa38	GET	 undefined	 /verifyOTP?otp=748417

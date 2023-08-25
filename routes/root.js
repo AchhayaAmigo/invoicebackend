@@ -4,6 +4,7 @@ const handleSignUp = require("../controllers/user/signupController");
 const handleSignin = require("../controllers/user/authController");
 const handleLogout = require("../controllers/user/logoutController");
 const handleRefreshToken = require("../controllers/refreshController");
+const {handleOTP, handleVerifyOTP} = require("../controllers/user/OTPController.js");
 const { handleAddBill, handleDeleteBill } = require("../controllers/bill/add-delete");
 const { handleBillByID, handleBills } = require("../controllers/bill/getBills");
 const {
@@ -22,6 +23,9 @@ router.post("/signin", handleSignin);
 router.post("/signup", handleSignUp);
 router.get("/logout", handleLogout);
 router.get("/refresh", handleRefreshToken);
+
+router.get("/generateOTP", handleOTP);
+router.get("/verifyOTP", handleVerifyOTP);
 
 router.use(verifyJWT);
 
