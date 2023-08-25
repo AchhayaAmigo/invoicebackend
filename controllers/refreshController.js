@@ -32,4 +32,4 @@ const handleRefreshToken = async (req, res) => {
   });
 };
 
-module.exports = { handleRefreshToken };
+module.exports = handleRefreshToken;
