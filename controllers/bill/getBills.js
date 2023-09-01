@@ -1,13 +1,8 @@
-const userDB = {
-  users: require("../../model/users.json"),
-  setUsers: function (data) {
-    this.users = data;
-  },
-};
+const User = require("../../model/User");
 
-const handleBills = (req, res) => {
+const handleBills = async (req, res) => {
   const user = req.user;
-  const foundUser = userDB.users.find((u) => u.username === user);
+  const foundUser = await User.findOne({ username: user }).exec();
   if (!foundUser) {
     res
       .status(401)
@@ -17,11 +12,11 @@ const handleBills = (req, res) => {
   res.json(foundUser.bills);
 };
 
-const handleBillByID = (req, res) => {
+const handleBillByID = async (req, res) => {
   const user = req.user;
   const id = req.query.id;
 
-  const foundUser = userDB.users.find((u) => u.username === user);
+  const foundUser = await User.findOne({ username: user }).exec();
   if (!foundUser) {
     res
       .status(401)

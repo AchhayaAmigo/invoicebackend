@@ -1,16 +1,8 @@
-const userDB = {
-  users: require("../../model/users.json"),
-  setUsers: function (data) {
-    this.users = data;
-  },
-};
-
-const fsPromises = require("fs").promises;
-const path = require("path");
+const User = require("../../model/User");
 
 const handleAddBill = async (req, res) => {
   const user = req.user;
-  const foundUser = userDB.users.find((u) => u.username === user);
+  const foundUser = await User.findOne({ username: user }).exec();
   if (!foundUser) {
     res
       .status(401)
@@ -18,19 +10,15 @@ const handleAddBill = async (req, res) => {
   }
 
   foundUser.bills.push(req.body);
-  userDB.setUsers(userDB.users);
-  await fsPromises.writeFile(
-    path.join(__dirname, "../../model/users.json"),
-    JSON.stringify(userDB.users)
-  );
+  await foundUser.save();
 
   res.sendStatus(201);
 };
 
-const handleDeleteBill = (req, res) => {
+const handleDeleteBill = async (req, res) => {
   const user = req.user;
   const id = req.query.id;
-  const foundUser = userDB.users.find((u) => u.username === user);
+  const foundUser = await User.findOne({ username: user }).exec();
   if (!foundUser) {
     res
       .status(401)
@@ -44,11 +32,7 @@ const handleDeleteBill = (req, res) => {
   }
 
   foundUser.bills.splice(index, 1);
-  userDB.setUsers(userDB.users);
-  fsPromises.writeFile(
-    path.join(__dirname, "../../model/users.json"),
-    JSON.stringify(userDB.users)
-  );
+  await foundUser.save();
 
   res.sendStatus(204);
 };

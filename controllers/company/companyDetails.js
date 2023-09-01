@@ -1,16 +1,8 @@
-const userDB = {
-  users: require("../../model/users.json"),
-  setUsers: function (data) {
-    this.users = data;
-  },
-};
+const User = require("../../model/User");
 
-const fsPromises = require("fs").promises;
-const path = require("path");
-
-const handleGetDetails = (req, res) => {
+const handleGetDetails = async (req, res) => {
   const user = req.user;
-  const foundUser = userDB.users.find((u) => u.username === user);
+  const foundUser = await User.findOne({ username: user }).exec();
   if (!foundUser) {
     res
       .status(401)
@@ -21,7 +13,7 @@ const handleGetDetails = (req, res) => {
 
 const handlePostDetails = async (req, res) => {
   const user = req.user;
-  const foundUser = userDB.users.find((u) => u.username === user);
+  const foundUser = await User.findOne({ username: user }).exec();
   if (!foundUser) {
     res
       .status(401)
@@ -29,11 +21,7 @@ const handlePostDetails = async (req, res) => {
   }
 
   foundUser.companyDetails = req.body;
-  userDB.setUsers(userDB.users);
-  await fsPromises.writeFile(
-    path.join(__dirname, "../../model/users.json"),
-    JSON.stringify(userDB.users)
-  );
+  await foundUser.save();
 
   res.sendStatus(201);
 };
@@ -42,7 +30,7 @@ const handlePutDetails = async (req, res) => {
   const user = req.user;
   const updatedDetails = req.body;
 
-  const foundUser = userDB.users.find((u) => u.username === user);
+  const foundUser = await User.findOne({ username: user }).exec();
   if (!foundUser) {
     res
       .status(401)
@@ -51,11 +39,7 @@ const handlePutDetails = async (req, res) => {
   }
 
   foundUser.companyDetails = { ...foundUser.companyDetails, ...updatedDetails };
-  userDB.setUsers(userDB.users);
-  await fsPromises.writeFile(
-    path.join(__dirname, "../../model/users.json"),
-    JSON.stringify(userDB.users)
-  );
+  await foundUser.save();
 
   res.json({ message: "Company details updated successfully." });
 };
@@ -63,7 +47,7 @@ const handlePutDetails = async (req, res) => {
 const handleDeleteDetails = async (req, res) => {
   const user = req.user;
 
-  const foundUser = userDB.users.find((u) => u.username === user);
+  const foundUser = await User.findOne({ username: user }).exec();
   if (!foundUser) {
     res
       .status(401)
@@ -78,11 +62,7 @@ const handleDeleteDetails = async (req, res) => {
     contact: "",
     tandc: "",
   };
-  userDB.setUsers(userDB.users);
-  await fsPromises.writeFile(
-    path.join(__dirname, "../../model/users.json"),
-    JSON.stringify(userDB.users)
-  );
+  await foundUser.save();
 
   res.json({ message: "Company details deleted successfully." });
 };
