@@ -16,7 +16,7 @@ const {
 const verifyJWT = require("../middlewares/verifyJWT");
 
 router.get("/", (req, res) => {
-  res.send("Testing Home Route");
+  res.json({"msg": "Testing Home Route"});
 });
 
 router.post("/signin", handleSignin);

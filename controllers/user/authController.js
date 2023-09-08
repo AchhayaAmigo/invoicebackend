@@ -43,7 +43,7 @@ const handleSignin = async (req, res) => {
       httpOnly: true,
       sameSite: "None",
       maxAge: 24 * 60 * 60 * 1000,
-      // secure: true,
+      secure: true,
     });
     res.status(200).json({ accessToken });
   } else {

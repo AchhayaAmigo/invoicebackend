@@ -5,3 +5,15 @@
 20230825	15:11:11	75cbee69-8688-4028-871b-e851bc359e55	TypeError : Assignment to constant variable.
 20230825	15:31:20	cd7b4644-8066-4638-8662-85dc27d4e10a	Error : Cannot set headers after they are sent to the client
 20230825	15:40:35	6cd1a040-3d08-4afe-8c11-8da051d07e0a	Error : Cannot set headers after they are sent to the client
+20230908	13:19:54	1db39f50-5579-47e3-914b-4c851fefd606	Error : Not allowed by CORS
+20230908	13:19:54	115ad45a-5f3f-4c50-8f08-cad3719712ce	Error : Not allowed by CORS
+20230908	13:25:05	1413e7e3-4b1b-4054-9a79-2cfe9933b597	Error : Not allowed by CORS
+20230908	13:25:05	b8f75795-924d-4a75-bbe2-5dc521ed0716	Error : Not allowed by CORS
+20230908	13:25:30	79b74f91-1a7e-4ea0-a0b0-4a8e4a23d69c	Error : Not allowed by CORS
+20230908	13:25:30	ae88e20d-6fad-4ea6-acd6-cccde7925cf1	Error : Not allowed by CORS
+20230908	13:27:37	f6bb18b0-02a1-4f32-b63b-c313ecea46ca	Error : Not allowed by CORS
+20230908	13:27:37	a381c8d9-008c-4106-bf8c-6955019430d5	Error : Not allowed by CORS
+20230908	13:28:29	65c93513-f0a4-414a-9454-fcfdc55d9ba8	Error : Not allowed by CORS
+20230908	13:28:29	73a928bf-5e4a-45fa-9f2c-d19642183d0d	Error : Not allowed by CORS
+20230908	13:28:32	d607650a-876d-43cc-9d6b-ea41640376ba	Error : Not allowed by CORS
+20230908	13:28:32	8d41d5e9-476e-4059-ab7f-3c5c8e3ba180	Error : Not allowed by CORS
